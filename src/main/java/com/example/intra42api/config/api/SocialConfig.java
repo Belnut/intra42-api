@@ -12,6 +12,7 @@ import org.springframework.web.context.annotation.RequestScope;
 
 @Configuration
 public class SocialConfig {
+
     @Bean
     @RequestScope
     public Intra42 intra42(OAuth2AuthorizedClientService clientService) {
@@ -31,4 +32,6 @@ public class SocialConfig {
         }
         return new Intra42(accessToken);
     }
+
+
 }

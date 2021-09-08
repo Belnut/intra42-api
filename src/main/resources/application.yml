@@ -7,7 +7,7 @@ spring:
             client-name: intra42
             client-id: "${UID_42INTRA}"
             client-secret: "${SECRET_42INTRA}"
-            redirectUri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             authorization-grant-type: authorization_code
             scope: public
 
